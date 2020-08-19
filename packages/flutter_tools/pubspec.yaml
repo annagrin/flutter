@@ -99,6 +99,9 @@ dependencies:
 dependency_overrides:
   dwds:
     path: ../../../../webdev/dwds
+  devtools: ^0.8.0
+  devtools_server: ^0.8.0
+  devtools_shared: ^0.8.0
 
 dev_dependencies:
   collection: 1.15.0-nullsafety.2

@@ -47,7 +47,7 @@ typedef DwdsLauncher = Future<Dwds> Function({
   void Function(Level, String) logWriter,
   bool verbose,
   UrlEncoder urlEncoder,
-  bool useFileProvider,
+  MetadataProvider metadataProvider,
   ExpressionCompiler expressionCompiler,
 });
 
@@ -249,7 +249,7 @@ class WebAssetServer implements AssetReader {
           serverPathForModule,
           serverPathForAppUri,
         ),
-        useFileProvider: true,
+        metadataProvider: FileMetadataProvider(server, null),
         expressionCompiler: expressionCompiler
       );
       shelf.Pipeline pipeline = const shelf.Pipeline();
