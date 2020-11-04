@@ -55,4 +55,4 @@ fi
 # To define `shared::execute()` function
 source "$BIN_DIR/internal/shared.sh"
 
-shared::execute "$@"
+shared::execute "--local-engine=host_debug_unopt" "$@"
