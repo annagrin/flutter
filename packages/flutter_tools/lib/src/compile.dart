@@ -280,6 +280,7 @@ class KernelCompiler {
         platformDill,
       ],
       ...?extraFrontEndOptions,
+      '--verbose',
       mainUri ?? mainPath,
     ];
 
@@ -694,6 +695,7 @@ class DefaultResidentCompiler implements ResidentCompiler {
       ],
       if (unsafePackageSerialization == true) '--unsafe-package-serialization',
       ...?extraFrontEndOptions,
+      '--verbose'
     ];
     _logger.printTrace(command.join(' '));
     _server = await _processManager.start(command);
