@@ -100,10 +100,10 @@ dependency_overrides:
     path: /Users/annagrin/source/flutter/engine/src/out/host_debug_unopt/gen/dart-pkg/sky_engine
   sky_services:
     path: /Users/annagrin/source/flutter/engine/src/out/host_debug_unopt/gen/dart-pkg/sky_services
-  dwds:
-    path:
-      /Users/annagrin/source/webdev/dwds
-  vm_service: 5.4.0
+  #dwds:
+  #  path:
+  #    /Users/annagrin/source/webdev/dwds
+  #vm_service: 5.4.0
 
 dev_dependencies:
   collection: 1.15.0-nullsafety.5
